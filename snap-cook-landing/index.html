@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap & Cook - AI Recipe Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero -->
+    <section class="bg-gradient-to-br from-orange-500 to-red-600 text-white py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Snap Your Ingredients.<br>Choose Your Cuisine.<br>Get Cooking.</h1>
+            <p class="text-xl mb-8">AI-powered recipe generator that turns your fridge into delicious meals. <strong>Free during beta!</strong></p>
+            <a href="#form" class="inline-block bg-white text-orange-600 font-bold px-8 py-4 rounded-full hover:bg-orange-50 transition">Get Your Custom Recipe →</a>
+        </div>
+    </section>
+
+    <!-- Problems -->
+    <section class="py-16 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">❌ Sound familiar?</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-red-50 p-6 rounded-lg">"I have chicken and vegetables... but what should I cook?"</div>
+                <div class="bg-red-50 p-6 rounded-lg">"I want Indian food, but do I have the right ingredients?"</div>
+                <div class="bg-red-50 p-6 rounded-lg">"Same ingredients, different day... so bored!"</div>
+                <div class="bg-red-50 p-6 rounded-lg">"How much should I cook for just me vs. my family?"</div>
+                <div class="bg-red-50 p-6 rounded-lg">"I have allergies - will this recipe work for me?"</div>
+                <div class="bg-red-50 p-6 rounded-lg">"I don't know what dish matches my mood today."</div>
+            </div>
+            <p class="text-center text-gray-600 mt-8">You're not alone. Millions face these dilemmas every day.</p>
+        </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="py-16 px-6 bg-blue-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">✨ Meet Snap & Cook</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow"><div class="text-4xl mb-3">📸</div><h3 class="font-bold mb-2">Computer Vision</h3><p class="text-gray-600">Instantly identify ingredients</p></div>
+                <div class="bg-white p-6 rounded-lg shadow"><div class="text-4xl mb-3">🌍</div><h3 class="font-bold mb-2">20+ Cuisines</h3><p class="text-gray-600">From Chinese to Italian</p></div>
+                <div class="bg-white p-6 rounded-lg shadow"><div class="text-4xl mb-3">🤖</div><h3 class="font-bold mb-2">AI Recipes</h3><p class="text-gray-600">Custom to YOUR ingredients</p></div>
+                <div class="bg-white p-6 rounded-lg shadow"><div class="text-4xl mb-3">👥</div><h3 class="font-bold mb-2">Smart Portions</h3><p class="text-gray-600">Auto-adjust serving sizes</p></div>
+                <div class="bg-white p-6 rounded-lg shadow"><div class="text-4xl mb-3">🚫</div><h3 class="font-bold mb-2">Allergy-Friendly</h3><p class="text-gray-600">Adapts to dietary needs</p></div>
+                <div class="bg-white p-6 rounded-lg shadow"><div class="text-4xl mb-3">🎥</div><h3 class="font-bold mb-2">Video Tutorials</h3><p class="text-gray-600">Step-by-step guidance</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">🎯 4 Simple Steps</h2>
+            <div class="space-y-8">
+                <div class="flex gap-6 items-start">
+                    <div class="text-5xl">📸</div>
+                    <div><h3 class="text-2xl font-bold mb-2">SNAP</h3><p class="text-gray-600">Take a photo of your ingredients. AI identifies them automatically.</p></div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="text-5xl">🌏</div>
+                    <div><h3 class="text-2xl font-bold mb-2">CHOOSE</h3><p class="text-gray-600">Pick your craving: 🇨🇳 Chinese 🇮🇳 Indian 🇹🇭 Thai 🇮🇹 Italian 🇲🇽 Mexican 🇯🇵 Japanese 🇰🇷 Korean 🇺🇸 American</p></div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="text-5xl">👥</div>
+                    <div><h3 class="text-2xl font-bold mb-2">CUSTOMIZE</h3><p class="text-gray-600">How many people? Any allergies or dietary restrictions?</p></div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="text-5xl">🍳</div>
+                    <div><h3 class="text-2xl font-bold mb-2">COOK</h3><p class="text-gray-600">Get 3-5 personalized recipes. Choose one and start cooking!</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example -->
+    <section class="py-16 px-6 bg-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">🍽️ Sample Output</h2>
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="mb-6"><strong>Input:</strong> Chicken, Onion, Garlic, Tomato, Rice | Cuisine: Chinese | Servings: 2 | Dietary: Gluten-free</div>
+                <div class="border-t pt-6">
+                    <h3 class="text-2xl font-bold mb-4">🇨🇳 Kung Pao Chicken (Gluten-Free)</h3>
+                    <div class="flex gap-4 mb-4 text-sm text-gray-600">
+                        <span>⭐⭐⭐</span>
+                        <span>25 minutes</span>
+                        <span>Serves 2</span>
+                    </div>
+                    <div class="mb-4">
+                        <strong>Ingredients (adjusted for 2):</strong>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>Chicken breast: 250g ✅</li>
+                            <li>Onions: 1 medium ✅</li>
+                            <li>Garlic: 3 cloves ✅</li>
+                            <li>Tomatoes: 2 ✅</li>
+                            <li>Peanuts: 50g ❌</li>
+                            <li>Gluten-free soy sauce: 2 tbsp ❌</li>
+                        </ul>
+                    </div>
+                    <div class="bg-yellow-50 p-4 rounded mb-4">
+                        <strong>Substitutions:</strong> Regular soy sauce → Use tamari or coconut aminos
+                    </div>
+                    <div>
+                        <strong>Instructions:</strong>
+                        <ol class="list-decimal ml-6 mt-2 space-y-2">
+                            <li>Cut chicken into bite-sized pieces...</li>
+                            <li>Stir-fry with garlic and onions...</li>
+                            <li>Add tomatoes and seasonings...</li>
+                            <li>Serve over rice...</li>
+                        </ol>
+                    </div>
+                    <div class="mt-4"><a href="#" class="text-blue-600 hover:underline">🎥 Watch Tutorial</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form -->
+    <section id="form" class="py-16 px-6 bg-gradient-to-br from-orange-500 to-red-600 text-white">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-4">Ready to Cook?</h2>
+            <p class="text-center text-xl mb-8">Get Your Free Custom Recipe!</p>
+            <form class="bg-white text-gray-800 p-8 rounded-lg shadow-lg space-y-6" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div>
+                    <label class="block font-bold mb-2">Your Name *</label>
+                    <input type="text" name="name" required class="w-full p-3 border rounded">
+                </div>
+                <div>
+                    <label class="block font-bold mb-2">Your Email *</label>
+                    <input type="email" name="email" required class="w-full p-3 border rounded">
+                </div>
+                <div>
+                    <label class="block font-bold mb-2">What ingredients do you have? *</label>
+                    <textarea name="ingredients" required rows="3" class="w-full p-3 border rounded" placeholder="Chicken breast, rice, onions, garlic, soy sauce..."></textarea>
+                </div>
+                <div>
+                    <label class="block font-bold mb-2">What cuisine are you craving? *</label>
+                    <select name="cuisine" required class="w-full p-3 border rounded">
+                        <option value="">Select...</option>
+                        <option>Chinese</option>
+                        <option>Indian</option>
+                        <option>Thai</option>
+                        <option>Italian</option>
+                        <option>Mexican</option>
+                        <option>Japanese</option>
+                        <option>Korean</option>
+                        <option>American</option>
+                        <option>Any/No preference</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block font-bold mb-2">How many people? *</label>
+                    <select name="servings" required class="w-full p-3 border rounded">
+                        <option value="">Select...</option>
+                        <option>Just me (1 person)</option>
+                        <option>2 people</option>
+                        <option>3-4 people (family)</option>
+                        <option>5+ people (gathering)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block font-bold mb-2">Any dietary restrictions? *</label>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="checkbox" name="dietary[]" value="none" class="mr-2"> None</label>
+                        <label class="flex items-center"><input type="checkbox" name="dietary[]" value="vegetarian" class="mr-2"> Vegetarian</label>
+                        <label class="flex items-center"><input type="checkbox" name="dietary[]" value="vegan" class="mr-2"> Vegan</label>
+                        <label class="flex items-center"><input type="checkbox" name="dietary[]" value="gluten-free" class="mr-2"> Gluten-free</label>
+                        <label class="flex items-center"><input type="checkbox" name="dietary[]" value="dairy-free" class="mr-2"> Dairy-free</label>
+                        <label class="flex items-center"><input type="checkbox" name="dietary[]" value="nut-allergy" class="mr-2"> Nut allergy</label>
+                    </div>
+                </div>
+                <div>
+                    <label class="block font-bold mb-2">Difficulty level?</label>
+                    <div class="space-y-2">
+                        <label class="flex items-center"><input type="radio" name="difficulty" value="easy" class="mr-2"> Easy (15-20 min)</label>
+                        <label class="flex items-center"><input type="radio" name="difficulty" value="medium" class="mr-2"> Medium (20-35 min)</label>
+                        <label class="flex items-center"><input type="radio" name="difficulty" value="hard" class="mr-2"> Challenge me! (35+ min)</label>
+                    </div>
+                </div>
+                <div>
+                    <label class="block font-bold mb-2">Anything else?</label>
+                    <textarea name="notes" rows="2" class="w-full p-3 border rounded" placeholder="I don't have an oven, Cooking for kids, Prefer spicy..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-orange-600 text-white font-bold py-4 rounded-lg hover:bg-orange-700 transition">Generate My Recipe →</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">💬 What Early Users Say</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <p class="mb-4">"As someone with celiac disease, Snap & Cook automatically made everything gluten-free. Life-changing!"</p>
+                    <p class="font-bold">— Emily R., Sydney ⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <p class="mb-4">"Cooking for one is hard. This app adjusts portions perfectly. No more leftovers for days!"</p>
+                    <p class="font-bold">— David K., New York ⭐⭐⭐⭐⭐</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <p class="mb-4">"This is magic! Random leftovers became amazing Thai basil chicken. My family loved it!"</p>
+                    <p class="font-bold">— Sarah M., California ⭐⭐⭐⭐⭐</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 px-6 bg-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">❓ FAQ</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-2">Do you support dietary restrictions?</h3>
+                    <p class="text-gray-600">Yes! We support vegetarian, vegan, gluten-free, dairy-free, keto, halal, kosher, and common allergens. Just select your restrictions.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-2">Can you adjust portion sizes?</h3>
+                    <p class="text-gray-600">Absolutely! Tell us how many people you're cooking for, and we'll automatically adjust ingredient quantities.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-2">What if I have multiple allergies?</h3>
+                    <p class="text-gray-600">No problem! Select all that apply, and our AI will find recipes that work or suggest safe substitutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 text-center">
+        <p class="mb-2">© 2026 Snap & Cook. All rights reserved.</p>
+        <p class="text-gray-400">Snap Your Ingredients, Choose Your Cuisine, Cook Like a Pro</p>
+    </footer>
+</body>
+</html>
